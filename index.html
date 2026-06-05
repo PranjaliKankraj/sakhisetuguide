@@ -5,11 +5,18 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO SECTION */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
   url("sakhi.jpg");
-  height:400px;
+  height: 400px;
   background-size: cover;
+  background-position: center;
   color: white;
   display: flex;
   flex-direction: column;
@@ -19,7 +26,7 @@
 }
 
 .hero h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -27,6 +34,7 @@
   font-size: 18px;
 }
 
+/* BUTTON */
 .btn {
   background: #38a169;
   color: white;
@@ -40,25 +48,89 @@
   background: #2f855a;
 }
 
+/* NAV */
+nav {
+  background: #1a365d;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #38a169;
+}
+
+/* CARDS */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  vertical-align: top;
+}
+
 .card img {
   width: 100%;
   border-radius: 10px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  color: #2b6cb0;
+  margin-top: 30px;
+}
+
+/* LINKS BUTTON */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #2b6cb0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  background: #38a169;
+}
+
+/* FOOTER */
+footer {
+  background: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 </style>
 
 </head>
 <body>
 
-<header>
-<h1>Sakhi Setu</h1>
-</header>
-
-<!-- 🔥 HERO SECTION -->
-<div class="hero">
-  <h1>Welcome to Sakhi Setu</h1>
+<header class="hero">
+  <h1>Sakhi Setu</h1>
   <p>Government Scheme Information Portal</p>
   <a class="btn" href="#schemes">Explore Schemes</a>
-</div>
+</header>
 
 <nav>
 <a href="index.html">Home</a>
@@ -68,25 +140,50 @@
 <a href="contact.html">Contact</a>
 </nav>
 
-<!-- 📌 SCHEMES -->
+<h2 class="section-title">Our Schemes</h2>
+
 <section class="container" id="schemes">
 
 <div class="card">
-<img src="women.jpg">
-<h2>Women Welfare</h2>
+<img src="ladkibahin.jpg">
+<h3>Women Welfare</h3>
 <p>Ladki Bahin Yojana and support schemes</p>
 </div>
 
 <div class="card">
-<img src="farmer.jpg">
-<h2>Farmer Support</h2>
+<img src="farmer laddies.jpg">
+<h3>Farmer Support</h3>
 <p>PM Kisan and agriculture schemes</p>
 </div>
 
 <div class="card">
 <img src="hospital.jpg">
-<h2>Healthcare</h2>
+<h3>Healthcare</h3>
 <p>Hospital and emergency services</p>
+</div>
+
+</section>
+
+<h2 class="section-title">Official Government Links</h2>
+
+<section class="container">
+
+<div class="card">
+<h3>India Govt Portal</h3>
+<p>All schemes information</p>
+<a href="https://www.india.gov.in/" target="_blank">Open Site</a>
+</div>
+
+<div class="card">
+<h3>Women Welfare</h3>
+<p>Government schemes for women</p>
+<a href="https://wcd.nic.in/" target="_blank">Open Site</a>
+</div>
+
+<div class="card">
+<h3>PM Kisan</h3>
+<p>Farmer support scheme</p>
+<a href="https://pmkisan.gov.in/" target="_blank">Open Site</a>
 </div>
 
 </section>
